@@ -4,6 +4,8 @@ project(basic_cpp_catch
         DESCRIPTION "Basic C++ project with Catch2 unit tests"
         LANGUAGES CXX)
 
+find_package(Catch2 REQUIRED)
+
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(basic_cpp_catch main.cpp)
